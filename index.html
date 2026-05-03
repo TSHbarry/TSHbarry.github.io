@@ -3,22 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PMK’sTo-Do List</title>
+    <meta name="description" content="Pu Mingkang, undergraduate student in the Department of Automation at Tsinghua University. Research interests include embodied AI and multimodal perception.">
+    <title>Pu Mingkang</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="divtop-fixed">
-        <h1>To-Do List</h1>
-    </div>
-    <div class="container">
-        <div class="input-container">
-            <input type="text" id="new-task" placeholder="Enter a new task...">
-            <button id="add-task">Add Task</button>
-        </div>
-        <ul id="task-list">
-            <!-- Task items will appear here -->
-        </ul>
-    </div>
-    <script src="script.js"></script>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="nav-name" href="#top">Pu Mingkang</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#interests">Research</a>
+                <a href="#experience">Experience</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="top" class="page">
+        <section class="hero" aria-labelledby="hero-title">
+            <p class="eyebrow">Academic Homepage</p>
+            <h1 id="hero-title">Pu Mingkang</h1>
+            <p class="hero-subtitle">
+                Undergraduate Student, Department of Automation, Tsinghua University
+            </p>
+            <p class="hero-summary">
+                I am interested in embodied AI and multimodal perception, with a focus on
+                learning-based systems that connect visual understanding, adaptation, and
+                robot intelligence.
+            </p>
+            <a class="contact-link" href="mailto:pmk23@mails.tsinghua.edu.cn">pmk23@mails.tsinghua.edu.cn</a>
+        </section>
+
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="section-heading">
+                <p class="section-kicker">About</p>
+                <h2 id="about-title">Profile</h2>
+            </div>
+            <div class="section-body">
+                <p>
+                    I am an undergraduate student in the Department of Automation at
+                    Tsinghua University. My current academic interests center on embodied
+                    AI and multimodal perception, especially how visual and language-based
+                    representations can support robust perception, adaptation, and
+                    decision-making in intelligent systems.
+                </p>
+            </div>
+        </section>
+
+        <section id="education" class="section" aria-labelledby="education-title">
+            <div class="section-heading">
+                <p class="section-kicker">Education</p>
+                <h2 id="education-title">Tsinghua University</h2>
+            </div>
+            <div class="section-body">
+                <article class="entry">
+                    <div class="entry-meta">
+                        <h3>Department of Automation</h3>
+                        <p>Sep. 2023 - Present</p>
+                    </div>
+                    <p>
+                        Undergraduate student majoring in Automation, with coursework and
+                        project experience across programming, data structures, probability
+                        and statistics, and artificial intelligence fundamentals.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="interests" class="section" aria-labelledby="interests-title">
+            <div class="section-heading">
+                <p class="section-kicker">Research</p>
+                <h2 id="interests-title">Research Interests</h2>
+            </div>
+            <div class="section-body">
+                <div class="interest-groups" aria-label="Research interest keywords">
+                    <div class="interest-group">
+                        <h3>Embodied AI</h3>
+                        <ul class="tags">
+                            <li>Robot learning</li>
+                            <li>Robotic manipulation</li>
+                            <li>World models</li>
+                            <li>Embodied agents</li>
+                        </ul>
+                    </div>
+                    <div class="interest-group">
+                        <h3>Multimodal Perception</h3>
+                        <ul class="tags">
+                            <li>Vision-language models</li>
+                            <li>Multimodal representation learning</li>
+                            <li>Visual perception</li>
+                            <li>Test-time adaptation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section" aria-labelledby="experience-title">
+            <div class="section-heading">
+                <p class="section-kicker">Experience</p>
+                <h2 id="experience-title">Research Experience</h2>
+            </div>
+            <div class="section-body timeline">
+                <article class="entry">
+                    <div class="entry-meta">
+                        <h3>Tsinghua University SRT Undergraduate Research Project</h3>
+                        <p>May 2025 - Dec. 2025</p>
+                    </div>
+                    <p>
+                        Studied convolutional neural network methods for underground
+                        magnetic target detection, aiming to regress target location and
+                        magnetic moment from magnetic anomaly tensor data.
+                    </p>
+                    <p>
+                        Processed magnetic anomaly datasets with normalization, noise
+                        filtering, and augmentation, then implemented a hybrid neural
+                        architecture combining multi-branch CNN feature extraction with an
+                        MLP module for physical prior fusion.
+                    </p>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-meta">
+                        <h3>Research Internship, Tsinghua Shenzhen International Graduate School</h3>
+                        <p>Oct. 2025 - Dec. 2025</p>
+                    </div>
+                    <p>
+                        Investigated test-time adaptation for CLIP-based vision models,
+                        reviewing core work in CLIP, TTA, class-incremental learning, and
+                        general-purpose visual models including SAM and DINOv3.
+                    </p>
+                    <p>
+                        Reproduced representative TTA methods such as TPT, Tent, and
+                        COSMIC with PyTorch, and explored extensions involving DINOv3
+                        visual encoders and cache-based adaptation mechanisms.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Pu Mingkang</p>
+    </footer>
 </body>
 </html>
